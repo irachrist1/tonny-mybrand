@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.topnav .logo {
+  padding-right: 20px;
+}
+
+.topnav .menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.topnav .logo,
+.topnav .icon {
+  margin-right: 20px;
+}
+
+.topnav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #1C5CFF;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #1C5CFF;
+  color: white;
+}
+
+.btn-download {
+  background-color: #1C5CFF;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-download {
+      padding: 10px 16px;
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .topnav a:not(.icon),
+  .btn-download {
+      display: none;
+  }
+}
+
+.btn-download:hover {
+  background-color: RoyalBlue;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+  .topnav.responsive .menu {
+      flex-direction: column;
+      text-align: center;
+  }
+  .topnav.responsive .menu a {
+      display: block;
+  }
+}
+
+
+.container-section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-section1 {
+  width: calc(50% - 10px);
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: 20px
+}
+
+.right-section1 {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align image vertically */
+  flex-direction: column; /* Align icons below image */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-end; /* Align icons to the bottom */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.right-section1 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  
+  
+}
+
+
+.irachrist1{
+  color: #1C5CFF;
+}
+
+.hi-5,
+.irachrist1,
+.uiux {
+  margin: 0; /* Remove default margin */
+}
+
+.uiux {
+  font-size: 40px; /* Adjust font size */
+  font-weight: 200px;
+}
+
+.bottom-left {
+  margin-top: 20px; /* Add space between text and button */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%; /* Adjust width as needed */
+  position: absolute;
+  margin-top: 20px; /* Align icons to the bottom of the container */
+
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin: 0 5px; /* Adjust horizontal margin between icons */
+  margin-bottom: 10px; /* Add space below the icons */
+}
+
+
+.container-section2 {
+  overflow: hidden; /* Clear float */
+  margin: 20px 0;
+}
+
+.left-section2 {
+  float: left;
+  width: 40%;
+  margin-right: 20px;
+}
+
+.right-section2 {
+  float: right;
+  width: 50%;
+}
+
+.right-section2 h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.right-section2 p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.right-section2 h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.language {
+  margin-bottom: 10px;
+}
+
+.loadbar {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress {
+  background-color: #1C5CFF;
+  height: 100%;
+  border-radius: 5px;
+}
+
+
+.page {
+  height: 100vh;
+}
+
+.container-section1, .container-section2 {
+  height: 100vh;
+}
