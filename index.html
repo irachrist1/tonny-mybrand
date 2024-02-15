@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-jMy5Lx4FujOh5KfGGMmU9fAmKnGZfWr3z80vmM2eT4znmUl+2gOvrLbs5CrpoYPoWHpu9YThPJa1uBqQ4xcNcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
 
 
@@ -24,7 +24,7 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
+        <a href="blog.html">Blog</a>
         <a href="#contact">Contact Me</a>
     </div>
     <div class="download">
@@ -95,242 +95,300 @@
     </div>
 </div>
 
-<div class="section_header">
-    <h1>Services</h1>
-    <p>Here's what I do Best</p>
-</div>
-
-<div class="row">
-    <div class="column">
-      <div class="card">
-        <p><img src="./assets/icon ui.png" alt=""></p>
-        <h3>UI/UX</h3>
-        <p>Make those ideas flourish and come to life though ui experiance.</p>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <p><img src="./assets/icon web.png" alt=""></p>
-        <h3>Web Design</h3>
-        <p>Design not just a website but a an experiance and home for your products.</p>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <p><img src="./assets/icon mobile.png" alt=""></p>
-        <h3>App Design</h3>
-        <p>Make users want to stay though informative and effective content that get's message out </p>
-      </div>
-    </div>
-    
-    <div class="column">
-      <div class="card">
-        <p><img src="./assets/design.png" alt=""></p>
-        <h3>Graphic Design</h3>
-        <p>Bridging the gap between greater design and viewing them.</p>
-      </div>
-    </div>
-  </div>
 
 
-  
-  
-  <div class="section_header">
+<section class="services">
+    <h2>Services</h2>
+    <p>Here's what I do best!</p>
+    <div class="service-container">
+        <div class="service">
+            <img src="./assets/icon ui.png" alt="Service Icon"> <h3>UI/UX Design</h3>
+            <p>I make those ideas flourish and come to life though lifetime experiences.</p>
+        </div>
+        <div class="service">
+            <img src="./assets/icon web.png" alt="Service Icon">
+            <h3>Web Design</h3>
+            <p>I design not just a website but a lifetime opportunity.</p>
+        </div>
+        <div class="service">
+            <img src="./assets/icon mobile.png" alt="Service Icon">
+            <h3>App Design</h3>
+            <p>I create visually appearing website that makes users want to download and just see them.</p>
+        </div>
+        <div class="service">
+            <img src="./assets/design.png" alt="Service Icon"> <h3>Graphic Design</h3>
+            <p>From flyers that simply matters and make sense, to videos that get's the message out.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
     <h1>Projects</h1>
-    <p>Here's what I've worked on.</p>
-</div>
- 
-<div id="center_grid">
-  <div id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')">All</button>
-    <button class="btn" onclick="filterSelection('ui_ux')">UI/UX</button>
-    <button class="btn" onclick="filterSelection('app_design')"> APP Design</button>
-    <button class="btn" onclick="filterSelection('graphic_design')">Graphic Design</button>
-  </div>
-</div> 
-  <!-- Portfolio Gallery Grid -->
-
-  <div class="row">
-    <div class="column ui_ux">
-      <div class="content">
-        <img src="./assets/Rectangle 21.png" alt="Mountains" style="width: 50%">
-        <h4>Weather SGV</h4>
-        <p>Power of designing weather apps..</p>
-      </div>
-    </div>
-    <div class="column ui_ux">
-      <div class="content">
-      <img src="./assets/Rectangle 22.png" alt="Lights" style="width: 50%">
-        <h4>CTech Side</h4>
-        <p>Power of doing great things.</p>
-      </div>
-    </div>
-    <div class="column ui_ux">
-      <div class="content">
-      <img src="./assets/Rectangle 23.png" alt="ui_ux" style="width: 50%">
-        <h4>greenhub</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
+    <hr>
+    
+    <h2>PORTFOLIO</h2>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> App Design</button>
+      <button class="btn" onclick="filterSelection('cars')"> Web Design</button>
+      <button class="btn" onclick="filterSelection('people')"> Graphic Design</button>
     </div>
     
-    <div class="column app_design">
-      <div class="content">
-        <img src="./assets/Rectangle 21.png" alt="Car" style="width: 50%">
-        <h4>Retro</h4>
-        <p>Lorem ipsum dolor..</p>
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column nature">
+        <div class="content">
+          <img src="./assets/Rectangle 21.png" alt="Mountains" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/Rectangle 22.png" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/Rectangle 23.png" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="./assets/Rectangle 21.png" alt="Car" style="width:100%">
+          <h4>Retro</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="./assets/Rectangle 22.png" alt="Car" style="width:100%">
+          <h4>Fast</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="./assets/Rectangle 23.png" alt="Car" style="width:100%">
+          <h4>Classic</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/Rectangle 21.png" alt="Car" style="width:100%">
+          <h4>Girl</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="./assets/Rectangle 22.png" alt="Car" style="width:100%">
+          <h4>Man</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="./assets/Rectangle 23.png" alt="Car" style="width:100%">
+          <h4>Woman</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    
+    
+
+<!-- 
+Testimonials page -->
+
+<div class="testimonial-container">
+<h2>Testimonials</h2>
+<p>Here's what people say am Good at!</p>
+<hr>
+</div>
+<div class="slider">
+    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+    <div class="slider__inner">
+      <div class="slider__contents"><img src="./assets/Image.png" alt="">
+        <h2 class="slider__caption">Ted</h2>
+        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+      </div>
+      <div class="slider__contents"><img src="./assets/Image.png" alt="">
+        <h2 class="slider__caption">Chris</h2>
+        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+      </div>
+      <div class="slider__contents"><img src="./assets/Image.png" alt="">
+        <h2 class="slider__caption">Tonny</h2>
+        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
+      </div>
+      <div class="slider__contents"><img src="./assets/Image.png" alt="">
+        <h2 class="slider__caption">Denis</h2>
+        <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
       </div>
     </div>
-    <div class="column app_design">
-      <div class="content">
-      <img src="./assets/Rectangle 22.png" alt="Car" style="width: 50%">
-        <h4>spcstech</h4>
-        <p>Lorem ipsum dolor..</p>
+  </div>
+
+
+
+
+<!-- 
+BLOGS / ARTICLES SECTION -->
+
+<div class="testimonial-container">
+<h2>Blogs</h2>
+<p>Here's what I do best Now, Articles!</p>
+<hr>
+</div>
+
+<div class="card-container">
+  <div class="card card-3">
+    <div class="card-img"></div>
+    <a href="" class="card-link">
+      <div class="card-img-hovered"></div>
+    </a>
+    <div class="card-info">
+      <div class="card-about">
+        <a class="card-tag">Tech</a>
+      <div class="card-time">6/07/2024</div>
+      </div>
+      <h1 class="card-title">ChatGPT beats Gemini multi-modal and Elon is back with Sam</h1>
+      <div class="card-creator">by <a href="">irachrist1</a></div>
+      <div class="card-actions">
+        <span class="like-count"><i class="fa fa-heart"></i> 250</span>
+        <span class="comment-count"><i class="fa fa-comments"></i> 15</span>
+    </div>
+    </div>
+  </div>
+    <div class="card card-2">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag">Tech</a>
+        <div class="card-time">6/07/2024</div>
+        </div>
+        <h1 class="card-title">Samsung laptops is exploding again</h1>
+        <div class="card-creator">by <a href="">irachrist1</a></div>
+        <div class="card-actions">
+          <span class="like-count"><i class="fa fa-heart"></i> 200</span>
+          <span class="comment-count"><i class="fa fa-comments"></i> 15</span>
+      </div>
       </div>
     </div>
-    <div class="column app_design">
-      <div class="content">
-      <img src="./assets/Rectangle 23.png" alt="Car" style="width: 50%">
-        <h4>Classic</h4>
-        <p>Lorem ipsum dolor..</p>
+    <div class="card card-3">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-deals">Deals</a>
+        <div class="card-time">5/27/2024</div>
+        </div>
+        <h1 class="card-title">Apple is having big Sale for the first time</h1>
+        <div class="card-creator">by <a href="">By Irachrist1</a></div>
+        <div class="card-actions">
+          <span class="like-count"><i class="fa fa-heart"></i> 120</span>
+          <span class="comment-count"><i class="fa fa-comments"></i> 54</span>
+      </div>
       </div>
     </div>
+    <div class="card card-4">
+      <div class="card-img"></div>
+      <a href="" class="card-link">
+        <div class="card-img-hovered"></div>
+      </a>
+      <div class="card-info">
+        <div class="card-about">
+          <a class="card-tag tag-politics">AI</a>
+        <div class="card-time">5/20/2024</div>
+        </div>
+        <h1 class="card-title">Google launches Gemini Multi-modal</h1>
+        <div class="card-creator">by <a href="">irachrist1</a></div>
+        <div class="card-actions">
+          <span class="like-count"><i class="fa fa-heart"></i> 124</span>
+          <span class="comment-count"><i class="fa fa-comments"></i> 23</span>
+      </div>
+      </div>
+    </div>
+  </div> 
   
-    <div class="column graphic_design">
-      <div class="content">
-        <img src="./assets/Rectangle 21.png" alt="Car" style="width: 50%">
-        <h4>code.io</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-    </div>
-    <div class="column graphic_design">
-      <div class="content">
-      <img src="./assets/Rectangle 23.png" alt="Car" style="width: 50%">
-        <h4>ctechside</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-    </div>
-    <div class="column graphic_design">
-      <div class="content">
-      <img src="./assets/Rectangle 22.png" alt="Car" style="width: 50%">
-        <h4>webfolio</h4>
-        <p>Lorem ipsum dolor..</p>
-      </div>
-    </div>
-  </div>
-  </div>
-  
+
+<!-- 
+newletter subscription -->
 
 
-  <div class="section_header">
-    <h1>Testimonials</h1>
-    <p>Here's what They say.</p>
+<div class="subscribe">
+	<h2 class="subscribe__title">Let's Design Together</h2>
+	<p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
+	<div class="form">
+		<input type="email" class="form__email" placeholder="Enter your email address" />
+		<button class="form__button">Send</button>
+	</div>
+
 </div>
 
 
-  <div class="container">
-    <input type="radio" name="nav" id="first" checked/>
-    <input type="radio" name="nav" id="second" />
-    <input type="radio" name="nav" id="third" />
-    
-    <label for="first" class="first"></label>
-  <label for="second"  class="second"></label>
-  <label for="third" class="third"></label>
-   
-    <div class="one slide">
-      <blockquote>
-        <span class="leftq quotes">&ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. <span class="rightq quotes">&bdquo; </span>
-      </blockquote>
-      <img src="./assets/Image.png" width="170"  height="130" alt="">
-      <h2>Steve Kruger</h2>
-      <h6>UI/UX Designer at Woof Design Studio</h6>
+
+
+<!-- 
+footer section -->
+
+
+
+<footer>
+
+  <div class="container_footer">
+      <div id="img_footer" class="logo-container text-center">
+          <img src="./assets/top-nav.png" alt="" width="200px">
+      </div>
+
+      <nav>
+          <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact Me</a></li>
+          </ul>
+      </nav>
+
+      <div class="social-media-icons">
+        <a href="#"><img src="./assets/Facebook - Negative.png" alt=""></a>
+        <a href="#"><img src="./assets/LinkedIn - Negative.png" alt=""></a>
+        <a href="#"><img src="./assets/Twitter - Negative.png" alt=""></a>
     </div>
-    
-    <div class="two slide">
-      <blockquote>
-        <span class="leftq quotes">&ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I recommend him to anyone who wants their work done professionally. The project ... <a href="#"> read more</a><span class="rightq quotes">&bdquo; </span>
-      </blockquote>
-      <img src="./assets/Image.png" width="170" height="130" />
-      <h2>John Doe</h2>
-      <h6>Developer Relations at Woof Studios</h6>
-    </div>
-    
-    <div class="three slide">
-      <blockquote>
-        <span class="quotes leftq"> &ldquo;</span> He promptly completed the task at hand and communicates really well till the project reaches the finishing line. I was pleased with his creative design and will definitely be hiring him again. <span class="rightq quotes">&bdquo; </span>
-      </blockquote>
-      <img src="./assets/Image.png" width="170" height="130" />
-      <h2>Steve Stevenson</h2>
-      <h6>CEO Woof Web Design Studios</h6>
-    </div>
-    
-    
+
+      <p class="copyright">© 2024 <g>Irachrist1</g> All Rights Reserved, Inc.</p>
   </div>
 
+</footer>
 
-
-<div class="body">
-  <div class="container_blog">
-    <div class="card">
-      <div class="card__header">
-        <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <span class="tag tag-blue">Technology</span>
-        <h4>What's new in 2022 Tech</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-          <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
-          <div class="user__info">
-            <h5>Jane Doe</h5>
-            <small>2h ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card__header">
-        <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <span class="tag tag-brown">Food</span>
-        <h4>Delicious Food</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-          <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
-          <div class="user__info">
-            <h5>Jony Doe</h5>
-            <small>Yesterday</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card__header">
-        <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <span class="tag tag-red">Automobile</span>
-        <h4>Race to your heart content</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-          <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
-          <div class="user__info">
-            <h5>John Doe</h5>
-            <small>2d ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <script src="script.js"></script>
