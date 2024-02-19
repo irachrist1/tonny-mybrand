@@ -1,7 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
 }
+
+
+
+
 
 .topnav {
   overflow: hidden;
@@ -12,9 +17,11 @@ body {
   padding: 10px 20px;
 }
 
-.topnav .logo {
-  padding-right: 20px;
+.topnav .logo img {
+  max-width: 100%;
+  height: auto;
 }
+
 
 .topnav .menu {
   flex-grow: 1;
@@ -47,7 +54,7 @@ body {
   background-color: #1C5CFF;
   border: none;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 24px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 12px;
@@ -68,7 +75,7 @@ body {
 }
 
 .btn-download:hover {
-  background-color: RoyalBlue;
+  background-color: #1C5CFF;
 }
 
 .icon {
@@ -93,6 +100,16 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .container-section1 {
   display: flex;
   justify-content: space-between;
@@ -102,7 +119,6 @@ body {
 
 .left-section1 {
   width: calc(50% - 10px);
-  padding: 0 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
   margin-left: 20px
@@ -112,10 +128,10 @@ body {
   width: calc(50% - 10px);
   display: flex;
   justify-content: center;
-  align-items: center; /* Align image vertically */
-  flex-direction: column; /* Align icons below image */
-  align-items: center; /* Center items horizontally */
-  justify-content: flex-end; /* Align icons to the bottom */
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   margin-bottom: 20px;
   position: relative;
 }
@@ -125,47 +141,189 @@ body {
   height: auto;
   max-height: 500px;
   
-  
 }
 
 
 .irachrist1{
   color: #1C5CFF;
+  font-size: 25px;
+}
+
+.hi-5{
+  font-size: 20px;
 }
 
 .hi-5,
 .irachrist1,
 .uiux {
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .uiux {
-  font-size: 40px; /* Adjust font size */
+  font-size: 40px;
   font-weight: 200px;
 }
 
+
 .bottom-left {
-  margin-top: 20px; /* Add space between text and button */
+  margin-top: 20px;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-between;
-  width: 20%; /* Adjust width as needed */
+  width: 20%;
   position: absolute;
-  margin-top: 20px; /* Align icons to the bottom of the container */
+  margin-top: 20px;
 
 }
 
 .social-icons i {
   font-size: 24px;
-  margin: 0 5px; /* Adjust horizontal margin between icons */
-  margin-bottom: 10px; /* Add space below the icons */
+  margin: 0 5px;
+  margin-bottom: 10px;
 }
 
 
+
+.landingpage, .about-me{
+  height: 100vh;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container-section1{
+      padding: 20px;
+  }
+}
+
+
+/*social icons, download button, sections separation on small screen*/
+
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+      display: none;
+  }
+
+  .btn-download-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .btn-download {
+      margin: 20px 0;
+  }
+}
+
+
+
+
+/*container sections in page 1 section 1, and the botton on the left */ 
+
+@media screen and (max-width: 600px) {
+  .right-section1 img {
+    display: block;
+    position: static;
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 20px;
+  }
+
+  .container-section1 {
+    /* flex-direction: column;  */
+    align-items: center; 
+  }
+
+  .left-section1, .right-section1 {
+    width: 100%;
+  }
+
+  .bottom-left {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section1 Section 2 Shared CSS */
+
+
+.container-section1, .container-section2 {
+  height: 80vh;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container-section1 .right-section1,
+  .container-section2 .left-section2 {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-icons {
+      display: none;
+  }
+
+  .btn-download-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .btn-download {
+      margin: 20px 0;
+  }
+
+  .container-section2 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-section2, .right-section2 {
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about me section */
+
+
 .container-section2 {
-  overflow: hidden; /* Clear float */
+  overflow: hidden;
   margin: 20px 0;
 }
 
@@ -215,41 +373,6 @@ body {
 }
 
 
-.page {
-  height: 100vh;
-}
-
-.container-section1, .container-section2 {
-  height: 100vh;
-}
-
-
-
-@media screen and (max-width: 600px) {
-  .social-icons {
-      display: none;
-  }
-
-  .btn-download-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .btn-download {
-      margin: 20px 0;
-  }
-
-  .container-section2 {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .left-section2, .right-section2 {
-      width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .language {
       flex-direction: column;
@@ -262,21 +385,6 @@ body {
 }
 
 
-
-
-@media screen and (max-width: 600px) {
-    .container-section1 .content-box {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .container-section1 .right-section1,
-    .container-section2 .left-section2 {
-        display: none;
-    }
-}
-
 .content-box {
     padding: 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -284,9 +392,35 @@ body {
 
 
 
+@media screen and  (max-width: 600px){
+  .container-section2 {
+    flex-direction: column;
+    align-items: center;
+}
 
-/*services section*/
+.left-section2, .right-section2 {
+    width: 100%;
+}
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* services section */
 .services {
             text-align: center;
             padding: 50px 0;
@@ -312,8 +446,7 @@ body {
         }
 
         .service {
-            /* Set equal flex basis for all cards */
-            flex: 1 0 25%; /* Adjust flex basis for four cards per line */
+            flex: 1 0 25%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -347,16 +480,15 @@ body {
             color: #666;
         }
 
-        /* Media queries for responsiveness */
         @media (max-width: 768px) {
             .service {
-                flex: 1 0 48%; /* Adjust width for two cards per line */
+                flex: 1 0 48%;
             }
         }
 
         @media (max-width: 480px) {
             .service {
-                flex: 1 0 100%; /* Single card per line */
+                flex: 1 0 100%;
             }
         }
 
@@ -364,9 +496,15 @@ body {
 
 
 
-/*Portfolio section*/
 
-/* Center website */
+
+
+
+
+
+
+
+
 
 
 * {
@@ -377,7 +515,6 @@ body {
   padding: 20px;
 }
 
-/* Center website */
 .main {
   max-width: 1000px;
   margin: auto;
@@ -392,38 +529,33 @@ h1 {
   margin: 10px -16px;
 }
 
-/* Add padding BETWEEN each column */
 .row,
 .row > .column {
+  border: 1px solid #2196F3;
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide all elements by default */
+  display: none;
 }
 
-/* Clear floats after rows */ 
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
   background-color: white;
   padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -445,7 +577,9 @@ h1 {
 
 
 
-/*Testimonials*/
+
+
+
 
 
 *, *:before, *:after {
@@ -453,7 +587,7 @@ h1 {
 }
 
 html, body {
-  height: 100%;
+  height: 80%;
 }
 
 body {
@@ -482,10 +616,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
 .slider__nav {
   width: 12px;
   height: 12px;
-  margin: 2rem 12px;
+  margin: 1rem 12px; /* Increase top and bottom margin for more space */
   border-radius: 50%;
   z-index: 10;
   outline: 6px solid #ccc;
@@ -493,11 +628,12 @@ body {
   box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
   cursor: pointer;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
+
 .slider__nav:checked {
   -webkit-animation: check 0.4s linear forwards;
           animation: check 0.4s linear forwards;
@@ -597,12 +733,10 @@ body {
 
 
 
-/*Articles and Blogs */
 
 
 
 
-/* DEFAULT STYLE */
 :root {
   font-size: 16px;
   --card-img-height: 200px;
@@ -614,6 +748,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 200ms ease-in-out;
+  
 }
 
 .card {
@@ -624,6 +759,7 @@ body {
   margin: 1.25rem 0.75rem;
   background: white;
   transition: all 300ms ease-in-out;
+  border: 2px solid #1C5CFF;
 
   .card-img {
     visibility: hidden;
@@ -670,20 +806,20 @@ body {
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 1px;
-        background: #505f79;
+        background: #1C5CFF;
         color: #fff;
 
         &.tag-news {
-          background: #36b37e;
+          background: #1C5CFF;
         }
 
         &.tag-deals {
-          background: #ffab00;
+          background: #1C5CFF;
         }
 
         &.tag-politics {
           width: 71px;
-          background: #ff5630;
+          background: #1C5CFF;
         }
       }
     }
@@ -693,6 +829,7 @@ body {
       font-size: 1.5rem;
       padding-bottom: 0.75rem;
       transition: all 350ms ease-in-out;
+      word-wrap: break-word(10);
     }
 
     .card-creator {
@@ -733,7 +870,6 @@ body {
   }
 }
 
-// CARD IMAGES
 
 .card-23 {
   .card-img,
@@ -772,7 +908,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px; /* Add spacing between the title and action elements */
+  margin-top: 10px;
 }
 
 .like-count,
@@ -857,7 +993,6 @@ newletter subscription  */
 
 
 
-/*footer*/
 footer {
   background-color: #f5f5f5;
   width: 100%;
@@ -923,9 +1058,9 @@ nav ul,
   margin-top: 20px;
   width: 100%;
   text-align: center;
-  bottom: 0; /* Add this to stick it to the bottom */
-    left: 0; /* Add this to extend it to the left edge */
-    right: 0; /* Add this to extend it to the right edge */
+  bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
@@ -937,11 +1072,11 @@ nav ul,
 .social-media-icons a {
   display: inline-block;
   margin-right: 10px;
-  color: #333; /* Change the color if needed */
+  color: #333;
 }
 
 .social-media-icons a:hover {
-  color: #1C5CFF; /* Change the hover color if needed */
+  color: #1C5CFF;
 }
 
 .social-media-icons i {
@@ -949,7 +1084,7 @@ nav ul,
 }
 
 .container_footer > * {
-  margin-bottom: 10px; /* Add vertical spacing between footer elements */
+  margin-bottom: 10px;
 }
 
 g{
@@ -964,9 +1099,135 @@ g{
   flex-direction: column;
   align-items: center;
   text-align: center;
+ 
 }
 
 .testimonial-container h2,
 .testimonial-container p {
   max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Contact section */
+
+
+.container-contact {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+} 
+
+input,
+.btn-contact {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn-contact:hover {
+  opacity: 1;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+input[type=submit] {
+  background-color: #1C5CFF;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #04AA6D;
+}
+
+.col-cont {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+.row-cont:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+.hide-md-lg {
+  display: none;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .col-cont {
+    width: 100%;
+    margin-top: 0;
+  }
+  .vl {
+    display: none;
+  }
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
 }

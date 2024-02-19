@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
-
+<header>
 <div class="topnav" id="myTopnav">
     <div class="logo">
         <img src="./assets/top-nav.png" alt="" style="max-height: 30px;">
@@ -24,20 +23,23 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact">Contact Me</a>
+        <a href="indexblog.html">Blog</a>
+        <a href="contactme.html">Contact Me</a>
     </div>
     <div class="download">
         <button class="btn-download"><i class="fa fa-download"></i>Download CV</button>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars fa-lg"></i>
     </a>
 </div>
+</header>
 
 
 
 
+<section class="landingpage">
+  
 <div class="container-section1">
     <div class="left-section1">
         <div class="top-left">
@@ -65,7 +67,18 @@
     </div>
 </div>
 
+</section> 
 
+
+
+
+
+
+
+
+
+
+<section class="about-me">
 <div class="container-section2">
     <div class="left-section2">
         <img src="./assets/image-1.png" alt="Profile Image">
@@ -94,6 +107,10 @@
         </div>
     </div>
 </div>
+</section>
+
+
+
 
 
 
@@ -130,10 +147,8 @@
 <!-- MAIN (Center website) -->
 <div class="main">
 
-    <h1>Projects</h1>
-    <hr>
-    
-    <h2>PORTFOLIO</h2>
+  <center style="padding: 70px;"><h2>Projects</h2>
+  <p>Here's what I do best!</p></center>
     
     <div id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -148,7 +163,7 @@
         <div class="content">
           <img src="./assets/Rectangle 21.png" alt="Mountains" style="width:100%">
           <h4>Mountains</h4>
-          <p>Lorem ipsum dolor..</p>
+          <p>Lorem ipsum dolor..</p>                                  
         </div>
       </div>
       <div class="column nature">
@@ -221,9 +236,13 @@
 Testimonials page -->
 
 <div class="testimonial-container">
+
+  <center style="padding: 70px; padding-bottom: 70px;">
 <h2>Testimonials</h2>
 <p>Here's what people say am Good at!</p>
 <hr>
+  </center>
+
 </div>
 <div class="slider">
     <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
@@ -256,16 +275,23 @@ Testimonials page -->
 <!-- 
 BLOGS / ARTICLES SECTION -->
 
+<section class="blogs-sect">
+
 <div class="testimonial-container">
-<h2>Blogs</h2>
+
+<center style="padding: 80px;">
+
+  <h2>Blogs</h2>
 <p>Here's what I do best Now, Articles!</p>
+
+</center>
 <hr>
 </div>
 
 <div class="card-container">
   <div class="card card-3">
     <div class="card-img"></div>
-    <a href="" class="card-link">
+    <a href="blog.html" class="card-link">
       <div class="card-img-hovered"></div>
     </a>
     <div class="card-info">
@@ -273,7 +299,7 @@ BLOGS / ARTICLES SECTION -->
         <a class="card-tag">Tech</a>
       <div class="card-time">6/07/2024</div>
       </div>
-      <h1 class="card-title">ChatGPT beats Gemini multi-modal and Elon is back with Sam</h1>
+      <h1 class="card-title">ChatGPT beats Gemini multi-modal</h1>
       <div class="card-creator">by <a href="">irachrist1</a></div>
       <div class="card-actions">
         <span class="like-count"><i class="fa fa-heart"></i> 250</span>
@@ -283,7 +309,7 @@ BLOGS / ARTICLES SECTION -->
   </div>
     <div class="card card-2">
       <div class="card-img"></div>
-      <a href="" class="card-link">
+      <a href="blog.html" class="card-link">
         <div class="card-img-hovered"></div>
       </a>
       <div class="card-info">
@@ -301,7 +327,7 @@ BLOGS / ARTICLES SECTION -->
     </div>
     <div class="card card-3">
       <div class="card-img"></div>
-      <a href="" class="card-link">
+      <a href="blog.html" class="card-link">
         <div class="card-img-hovered"></div>
       </a>
       <div class="card-info">
@@ -319,7 +345,7 @@ BLOGS / ARTICLES SECTION -->
     </div>
     <div class="card card-4">
       <div class="card-img"></div>
-      <a href="" class="card-link">
+      <a href="blog.html" class="card-link">
         <div class="card-img-hovered"></div>
       </a>
       <div class="card-info">
@@ -336,19 +362,53 @@ BLOGS / ARTICLES SECTION -->
       </div>
     </div>
   </div> 
-  
+</section>
+
+
+
+
+
+
 
 <!-- 
 newletter subscription -->
 
 
-<div class="subscribe">
-	<h2 class="subscribe__title">Let's Design Together</h2>
-	<p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
-	<div class="form">
-		<input type="email" class="form__email" placeholder="Enter your email address" />
-		<button class="form__button">Send</button>
-	</div>
+<div class="subscribe" style="padding: 150px;">
+
+<div class="container-contact">
+  <form action="">
+    <div class="row-cont">
+      <h2 style="text-align:center">Send Me Dm or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col-cont">
+        <a href="#" class="fb btn-contact">
+          <i class="fa fa-facebook fa-fw"></i> Connect on Facebook
+         </a>
+        <a href="#" class="twitter btn-contact">
+          <i class="fa fa-twitter fa-fw"></i> Connect on Twitter
+        </a>
+        <a href="#" class="google btn-contact"><i class="fa fa-google fa-fw">
+          </i>Connect on GMAIL
+        </a>
+      </div>
+
+      <div class="col-cont">
+        <div class="hide-md-lg">
+          <p>Or Connect Fill a form:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="message" name="message" placeholder="your message" required>
+        <input type="submit" value="Send">
+      </div>
+      
+    </div>
+  </form>
+</div>
 
 </div>
 
@@ -374,7 +434,7 @@ footer section -->
               <li><a href="#">Services</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Contact Me</a></li>
+              <li><a href="indexblog.html">Blogs</a></li>
           </ul>
       </nav>
 
