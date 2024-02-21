@@ -1,0 +1,100 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Stretch container to the bottom of the screen */
+}
+
+.left-pane {
+    width: 15%; /* Reduced width of the left pane */
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Add space between elements */
+}
+
+
+.admin-box {
+    margin-bottom: 20px;
+}
+
+.left-pane nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-pane nav ul li {
+    margin-bottom: 10px;
+}
+
+.left-pane nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px; /* Increase font size for better visibility */
+}
+
+.left-pane nav ul li button:focus {
+    outline: none;
+}
+
+.left-pane nav ul li button i {
+    margin-right: 10px;
+    font-size: 20px; /* Increase icon size */
+}
+
+.right-pane {
+    width: 70%;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.statistics,
+.graph,
+.recent-articles {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.statistics .statistic {
+    margin-bottom: 20px;
+}
+
+.recent-articles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-articles ul li {
+    margin-bottom: 10px;
+}
+
+.new-post-btn {
+    background-color: #1C5CFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px; /* Reduce button width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Increase font size */
+}
+
+.new-post-btn i {
+    margin-right: 5px;
+    font-size: 16px; /* Increase icon size */
+}

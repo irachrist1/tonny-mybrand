@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash-home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="left-pane">
+            <!-- Left pane content here -->
+            <div class="admin-box">
+                <img src="./images/Rectangle 24-logo.png" alt="Admin Image">
+            </div>
+            <nav>
+                <ul> 
+                    <li><button><i class="fas fa-tachometer-alt"></i> Dashboard</button></li>
+                    <li><button><i class="fas fa-newspaper"></i> Blog/Article</button></li>
+                    <li><button><i class="fas fa-envelope"></i> Messages</button></li>
+                    <li><button><i class="fas fa-cogs"></i> Settings</button></li>
+                    <li><button><i class="fas fa-sign-out-alt"></i> Log Out</button></li>
+                </ul>
+            </nav> 
+            <button class="new-post-btn"><i class="fas fa-plus"></i> New Post</button>
+     
+        </div>
+        <div class="right-pane">
+            <!-- Right pane content here -->
+            <header>
+                <!-- <img src="logo.png" alt="Logo"> -->
+                <h1>Dashboard</h1>
+                <input type="search" placeholder="Search...">
+            </header>
+            <section class="statistics">
+                <div class="statistic">
+                    <h2>Total Views</h2>
+                    <p class="number">10,000</p>
+                </div>
+                <!-- Add more statistic divs as needed -->
+            </section>
+            <section class="graph">
+                <!-- Graph will be rendered here using JavaScript -->
+            </section>
+            <section class="recent-articles">
+                <h2>Recent Articles</h2>
+                <ul>
+                    <li>
+                        <h3>Article Title 1</h3>
+                        <p>Category: Category 1</p>
+                        <!-- Add more details as needed -->
+                    </li>
+                    <!-- Add more article list items as needed -->
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
